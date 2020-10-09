@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer {
+    background-color: brown;
+    color: black;
+}
+
+.mat-drawer-container {
+    background-color:lightsalmon;
+
+    color: black;
+}
+
+.mat-toolbar.mat-primary {
+    background:darkred;
+    color: #fff;
+}
+.mat-elevation-z5{
+    position:relative;
+    z-index: 2 ;
+}
+
+.mat-sidenav a:hover{
+    color: orangered;
+}
+
+.mithbutton:hover{
+background-color: black;
+color: white;
+}

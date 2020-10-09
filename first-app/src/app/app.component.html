@@ -1,0 +1,31 @@
+<mat-toolbar position:fixed color="primary" class="mat-elevation-z5">
+  <mat-toolbar-row>
+    <span>LOGO</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button><mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+    </button>
+    <button mat-icon-button>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+  </button>
+  </mat-toolbar-row>
+</mat-toolbar> 
+
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+  
+    <mat-nav-list style="width:150px">
+      <a routerLink='one' mat-list-item style="height: 70px;"><mat-icon>dashboard</mat-icon>Dashboard</a>
+      <a routerLink='two' mat-list-item style="height: 70px;"><mat-icon>person</mat-icon>Student</a>
+      <a mat-list-item style="height: 70px;"><mat-icon>whatshot</mat-icon>Staff</a>
+      <a routerLink='about'mat-list-item style="height: 70px;"><mat-icon>account_circle</mat-icon>About</a>
+    </mat-nav-list>
+
+  </mat-sidenav> 
+<mat-sidenav-content>
+
+  <p style="height:88vh"><router-outlet></router-outlet></p>
+
+</mat-sidenav-content>
+
+</mat-sidenav-container>
